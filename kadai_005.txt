@@ -1,0 +1,44 @@
+PS C:\Users\81806> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\81806
+Mode                 LastWriteTime         Length Name                                                                                                                                       
+----                 -------------         ------ ----                                                                                                                                       
+
+
+Initialized empty Git repository in C:/Users/81806/git_challenge/.git/
+PS C:\Users\81806\git_challenge> git add sample.txt
+fatal: pathspec 'sample.txt' did not match any files
+PS C:\Users\81806\git_challenge> git add hello_world.txt
+PS C:\Users\81806\git_challenge> git commit -m "ist commit"
+[main (root-commit) 0af6f8e] ist commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\81806\git_challenge> git commit -m "2nd commit"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\81806\git_challenge> git add hello_world.txt   
+PS C:\Users\81806\git_challenge> git commit -m "2nd commit"
+[main 020536d] 2nd commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\81806\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\81806\git_challenge> git diff
+PS C:\Users\81806\git_challenge> git log
+commit 020536dfd668807abb7b4b47b9fd4db4b0fb1762 (HEAD -> main)
+Author: oshiromisuki <6igcastleman@gmail.com>
+Date:   Wed Oct 2 17:06:07 2024 +0900
+
+    2nd commit
+
+commit 0af6f8e75de8cd35e2026fe6f9b48dff1a9fe057
+Author: oshiromisuki <6igcastleman@gmail.com>
+Date:   Wed Oct 2 17:05:07 2024 +0900
+
+    ist commit
